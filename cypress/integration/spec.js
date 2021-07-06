@@ -3,7 +3,7 @@
 describe('Example site', () => {
   it('should verify that h1 header exist', () => {
     cy.visit('/')
-    cy.contains('h1', 'cypress-workshop-ci-example').should('be.visible')
+    cy.contains('h1', 'cypress-workshop-ci-example').should('not.be.visible')
   })
 
   it('navigates to README', () => {
