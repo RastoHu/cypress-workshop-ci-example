@@ -18,3 +18,5 @@ jobs:
           browser: chrome
           headless: true
           record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
